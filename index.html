@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //shipping cost script
+
+        let productOne = document.getElementsByClassName("pl-item")[0];
+        let productTwo = document.getElementsByClassName("pl-item")[1];
+        let productThree = document.getElementsByClassName("pl-item")[2];
+        let productFour = document.getElementsByClassName("pl-item")[3];
+        let productFive = document.getElementsByClassName("pl-item")[5];
+
+
+        productOne.addEventListener("click", event => {
+            if (event.detail === 1) {
+                productFive.classList.add("selected", "myFoot");
+                let productFiveFoot = document.querySelectorAll(".myFoot .pl-inner .pl-name input")[0].checked = false;
+            };
+        });
+
+        productTwo.addEventListener("click", event => {
+            if (event.detail === 1) {
+                productFive.classList.add("selected", "myFoot");
+                let productFiveFoot = document.querySelectorAll(".myFoot .pl-inner .pl-name input")[0].checked = true;
+            };
+        });
+
+        productThree.addEventListener("click", event => {
+            if (event.detail === 1) {
+                productFive.classList.add("selected", "myFoot");
+                let productFiveFoot = document.querySelectorAll(".myFoot .pl-inner .pl-name input")[0].checked = true;
+            };
+        });
+
+        productFour.addEventListener("click", event => {
+            if (event.detail === 1) {
+                productFive.classList.add("selected", "myFoot");
+                let productFiveFoot = document.querySelectorAll(".myFoot .pl-inner .pl-name input")[0].checked = false;
+            };
+        });
+
+
+    </script>
+</body>
+
+</html>
